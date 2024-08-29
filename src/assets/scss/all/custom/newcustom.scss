@@ -1,0 +1,791 @@
+.attendance-view-mdl {
+  margin-right: 35%;
+
+  .modal-content {
+    width: 150%;
+  }
+
+  table thead tr th {
+    position: sticky;
+    top: -1px;
+    background: white;
+    outline: auto;
+  }
+}
+
+.data-table-extensions {
+  padding: 20px !important;
+
+  .data-table-extensions-filter {
+    border-bottom: 1px solid;
+  }
+}
+
+.report-show-btn {
+  margin-top: 10px !important;
+  padding: 6px 20px !important;
+}
+
+.dashboard-tbl {
+  height: 70vh;
+  overflow: auto;
+
+  th {
+    position: sticky;
+    top: -1px;
+    background: white;
+    z-index: 999;
+  }
+}
+
+.view_salary {
+  th,
+  td {
+    padding: 5px !important;
+    vertical-align: top;
+    border-top: 1px solid transparent !important;
+  }
+}
+
+.tbl-style {
+  height: 75vh;
+  overflow: scroll;
+  // overflow-x:hidden;
+  text-align: center;
+  // padding: 10px;
+
+  //top: -2px;
+
+  tbody {
+    color: black;
+  }
+
+  thead tr th {
+    position: sticky;
+    top: -1px;
+    background: #f5f5f5;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    outline: auto;
+  }
+
+  // tfoot tr th {
+  //     position: sticky;
+  //     bottom: -1px;
+  //     background: white;
+  // }
+  .tfoot1 {
+    th {
+      // position: sticky;
+      bottom: 129px;
+      background: #dde0e8;
+      border-top: 1px solid;
+      border-bottom: 1px solid #b8bec4;
+    }
+  }
+
+  .tfoot2 {
+    th {
+      // position: sticky;
+      bottom: 100px;
+      background: #dde0e8;
+      border-bottom: 1px solid #b8bec4;
+    }
+  }
+
+  .tfoot3 {
+    th {
+      //position: sticky;
+      bottom: 70px;
+      background: #dde0e8;
+      border-bottom: 1px solid #b8bec4;
+    }
+  }
+
+  .tfoot4 {
+    th {
+      //position: sticky;
+      bottom: 20px;
+      background: #dde0e8;
+      border-bottom: 1px solid #b8bec4;
+    }
+  }
+
+  .tfoot5 {
+    th {
+      //position: sticky;
+      bottom: 0px;
+      background: #dde0e8;
+      border-bottom: 1px solid #b8bec4;
+    }
+  }
+
+  .td-style {
+    background: #df5e5e;
+  }
+
+  .td-style1 {
+    background: rgb(161, 200, 128);
+  }
+
+  .td-style2 {
+    background: #efd97d;
+  }
+  .td-style3 {
+    background-color: #fff;
+  }
+
+  .td-style4 {
+    background-color: rgb(87, 164, 247);
+  }
+
+  tr:hover {
+    border: 2px solid;
+  }
+}
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #b8bec4;
+}
+.accordionstyle {
+  padding: 0px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #000 !important;
+  background-color: #fff !important;
+  box-shadow: 1px 5px 7px #b7b1b1;
+  border: 1px solid #b7b1b1;
+}
+.tblalignment1 {
+  padding: 5px !important;
+  text-align: center;
+}
+.collapsebtn {
+  background-color: #eee;
+  border: 50px;
+}
+.shift {
+  border-bottom: 1px solid gray !important;
+
+  .form-control {
+    padding: 0;
+    height: 29px;
+    font-size: 13px;
+    border: none;
+    border-radius: unset;
+    box-shadow: 0px 2px 0px #cacaca !important;
+  }
+  .css-yk16xz-control {
+    border-style: none !important;
+    background-color: #eef1f7;
+  }
+
+  .css-1pahdxg-control:hover,
+  .css-1pahdxg-control:focus,
+  .css-1pahdxg-control:active {
+    border-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.ReactTable .rt-thead .rt-th.-sort-desc,
+.ReactTable .rt-thead .rt-td.-sort-desc {
+  box-shadow: none !important;
+}
+.ReactTable .rt-thead .rt-th.-sort-asc,
+.ReactTable .rt-thead .rt-td.-sort-asc {
+  box-shadow: none !important;
+}
+.drpdstyle {
+  padding: 1px 10px;
+}
+.form-control {
+  background-color: #eef1f7;
+}
+.css-yk16xz-control {
+  background-color: #eef1f7 !important;
+}
+.ReactTable .rt-th,
+.ReactTable .rt-td {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 0px;
+  flex: 1 0 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 7px 5px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  transition-property: width, min-width, padding, opacity;
+  text-align: center;
+}
+.addbtn {
+  border-radius: 4px;
+  padding: 5px 9px;
+  height: 41px;
+  background: #eef1f7;
+  box-shadow: none;
+  color: #052355;
+  border: 2px solid #eae9e9;
+}
+.custom-file-label {
+  background-color: #eef1f7 !important;
+}
+.deletepopup {
+  position: relative;
+  max-width: 100%;
+  margin: 0 0 0.4em;
+  padding: 0;
+  color: #595959;
+  font-size: 1.875em;
+  font-weight: 600;
+  text-align: center;
+  text-transform: none;
+  word-wrap: break-word;
+}
+.deletecontent {
+  z-index: 1;
+  justify-content: center;
+  margin: 0;
+  padding: 0 1.6em;
+  color: #545454;
+  font-size: 1.125em;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  word-wrap: break-word;
+}
+.reqmodal {
+  box-sizing: border-box;
+  width: 100%;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  border: 1px solid #d9d9d9;
+  border-radius: 0.1875em;
+  background: inherit;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 6%);
+  color: inherit;
+  font-size: 1.125em;
+}
+.iconbtn {
+  height: 24px;
+}
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #000;
+  background-color: #eef1f7;
+  border-color: #eef1f7;
+}
+.assignbtn {
+  background-color: transparent;
+  border-color: #052355;
+  color: #052355;
+  border-radius: 5px;
+  padding: 3px 5px;
+  margin-right: 80px;
+}
+.ReactTable .rt-thead .rt-resizable-header-content {
+  white-space: pre-wrap;
+}
+.ReactTable .rt-thead .rt-th,
+.ReactTable .rt-thead .rt-td {
+  border-right: 1px solid #ccc !important;
+  border-bottom: 1px solid #ccc !important;
+}
+.ReactTable .rt-tbody .rt-td {
+  border-right: 1px solid #ccc !important;
+  white-space: pre-wrap !important;
+  border-bottom: 1px solid #ccc;
+}
+.ReactTable {
+  height: 80vh;
+}
+
+.ReactTable .rt-tbody .rt-td {
+  border-right: 1px solid #ccc !important;
+  white-space: pre-wrap !important;
+  border-bottom: 1px solid #ccc;
+  height: 50px;
+}
+
+.table-style .rt-table .rt-tbody .ReactTable .rt-table .rt-thead {
+  // background: yellowgreen !important;
+  //  {
+  background: #fbf3d0 !important;
+  // }
+}
+.table-style .rt-table .rt-tbody .ReactTable .rt-table .rt-tbody {
+  // background: yellowgreen !important;
+  //  {
+  background: #fefcf3 !important;
+  // }
+}
+.table-style1
+  .rt-table
+  .rt-tbody
+  .ReactTable
+  .rt-table
+  .rt-tbody
+  .ReactTable
+  .rt-table
+  .rt-thead {
+  // background: yellowgreen !important;
+  //  {
+  background: #c6e6ec !important;
+  // }
+}
+.table-style1
+  .rt-table
+  .rt-tbody
+  .ReactTable
+  .rt-table
+  .rt-tbody
+  .ReactTable
+  .rt-table
+  .rt-tbody {
+  // background: yellowgreen !important;
+  //  {
+  background: #effcfc !important;
+  // }
+}
+.empheading {
+  padding: 10px 20px;
+}
+.datestyling {
+  font-size: 15px;
+  padding: 1px;
+}
+.savebtn {
+  background-color: #133f83;
+  border-color: #133f83;
+  border-radius: 5px;
+  height: 35px;
+  //font-family: "Inter";
+  //font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.savebtn:hover,
+.savebtn:active,
+.savebtn:focus {
+  background-color: #133f83;
+  border-color: #133f83;
+  border-radius: 5px;
+  height: 35px;
+  //font-family: "Inter";
+  //font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.cancelbtn {
+  height: 35px;
+  background: #6a7e95;
+  border-radius: 5px;
+  //font-family: "Inter";
+  // font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.cancelbtn:hover {
+  height: 35px;
+  background: #6a7e95;
+  border-radius: 5px;
+  //font-family: "Inter";
+  // font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.searchbar {
+  height: 38px;
+  //font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000 !important;
+  margin-top: 29px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  .form-control {
+    border-right: none;
+    border: 1px solid #eef1f7;
+  }
+}
+.searchicon {
+  // width: 20px;
+  // height: 20px;
+  background-color: #eef1f7;
+  border: none;
+  border-left: transparent !important;
+  //border: 1px solid #cccccc;
+}
+.table th,
+.table td {
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  height: 28px;
+  padding: 0px !important;
+  text-align: left;
+  //position: sticky;
+}
+.tblhead {
+  background-color: #cccccc;
+  color: #000000;
+  height: 41px;
+  //left: 1px;
+  padding: 2px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 33px;
+}
+.tableheight {
+  height: 76vh !important;
+  border: 1px solid #ccc;
+  background: whitesmoke;
+  overflow: auto;
+  overflow-x: hidden;
+
+  th {
+    position: sticky;
+    top: -1px;
+    background-color: #cccccc;
+    color: #000000;
+    z-index: 1;
+  }
+  tbody {
+    background: white;
+  }
+}
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  // height: 80vh;
+}
+.arrowbtn {
+  width: 80px;
+  height: 70px;
+  //left: 38%;
+  background-color: #052355;
+  border: 1px solid #052355;
+  border-radius: 18px;
+}
+.arrowbtn:hover {
+  width: 80px;
+  height: 70px;
+  //left: 38%;
+  background-color: #052355;
+  border: 1px solid #052355;
+  border-radius: 18px;
+}
+
+.custom-control {
+  position: relative;
+  display: block;
+  min-height: 1.3125rem;
+  padding-left: 40px !important;
+}
+/*! Scroll Bar Width*/
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.react-datepicker-popper {
+  z-index: 9;
+}
+.arrows {
+  @media (max-width: 1366px) {
+    transform: translate(60px, 230px);
+  }
+  @media (min-width: 1367px) {
+    transform: translate(100px, 250px) !important;
+  }
+}
+
+.emp {
+  .empheading {
+    padding: 10px 20px;
+  }
+  .datestyling {
+    font-size: 15px;
+    padding: 1px;
+  }
+  .savebtn {
+    background-color: #133f83;
+    border-color: #133f83;
+    border-radius: 5px;
+    height: 35px;
+    //font-family: "Inter";
+    //font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ffffff;
+  }
+  .savebtn:hover,
+  .savebtn:active,
+  .savebtn:focus {
+    background-color: #133f83;
+    border-color: #133f83;
+    border-radius: 5px;
+    height: 35px;
+    //font-family: "Inter";
+    //font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ffffff;
+  }
+  .cancelbtn {
+    height: 35px;
+    background: #6a7e95;
+    border-radius: 5px;
+    //font-family: "Inter";
+    // font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ffffff;
+  }
+  .cancelbtn:hover {
+    height: 35px;
+    background: #6a7e95;
+    border-radius: 5px;
+    //font-family: "Inter";
+    // font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ffffff;
+  }
+  .searchbar {
+    height: 38px;
+    //font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000 !important;
+    margin-top: 29px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    .form-control {
+      border-right: none;
+      border: 1px solid #eef1f7;
+    }
+  }
+  .searchicon {
+    // width: 20px;
+    // height: 20px;
+    background-color: #eef1f7;
+    border: none;
+    border-left: transparent !important;
+    //border: 1px solid #cccccc;
+  }
+  .table th,
+  .table td {
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    height: 28px;
+    // padding: 8px !important;
+    // text-align: left;
+    text-align: center;
+    //position: sticky;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .tblhead {
+    background-color: #cccccc;
+    color: #000000;
+    height: 41px;
+    //left: 1px;
+    padding: 2px;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 33px;
+  }
+  .tableheight {
+    height: 76vh !important;
+    border: 1px solid #ccc;
+    background: whitesmoke;
+    overflow: auto;
+    overflow-x: hidden;
+
+    th {
+      position: sticky;
+      top: -1px;
+      background-color: #cccccc;
+      color: #000000;
+      z-index: 1;
+    }
+    tbody {
+      background: white;
+    }
+  }
+  .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    // height: 80vh;
+  }
+  .arrowbtn {
+    width: 80px;
+    height: 70px;
+    //left: 38%;
+    background-color: #052355;
+    border: 1px solid #052355;
+    border-radius: 18px;
+  }
+  .arrowbtn:hover {
+    width: 80px;
+    height: 70px;
+    //left: 38%;
+    background-color: #052355;
+    border: 1px solid #052355;
+    border-radius: 18px;
+  }
+  .attendance-tbl {
+    height: 78.5vh;
+    overflow: auto;
+  }
+  .custom-control {
+    position: relative;
+    display: block;
+    min-height: 1.3125rem;
+    padding-left: 40px !important;
+  }
+  /*! Scroll Bar Width*/
+  /* width */
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .react-datepicker-popper {
+    z-index: 92 !important;
+  }
+  .arrows {
+    @media (max-width: 1366px) {
+      transform: translate(60px, 230px);
+    }
+    @media (min-width: 1367px) {
+      transform: translate(100px, 250px) !important;
+    }
+  }
+
+  .main-tbl-style {
+    th,
+    td {
+      padding: 2px !important;
+    }
+    .inner-tbl-td {
+      padding: 0px !important;
+    }
+
+    tr:hover {
+      background: #c6e6ec;
+    }
+    thead th {
+      position: sticky;
+      top: -1px;
+      background: #f5f6f7;
+    }
+  }
+
+  .btn-arrow-style {
+    color: black;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+
+    i {
+      font-size: 20px;
+    }
+  }
+  .datastyle-head {
+    .th-style {
+      position: sticky;
+      top: -1px;
+      background: #f6f5f7;
+      // z-index: 0 !important;
+    }
+    th,
+    td {
+      font-size: 14px;
+      color: #000000;
+      font-weight: 600;
+
+      text-align: center !important;
+    }
+  }
+
+  // .css-2b097c-container {
+  //   z-index: 99999;
+  // }
+}
+.rgt-cell-header {
+  z-index: 0 !important;
+}
+
+.greenColor {
+  background-color: greenyellow;
+  color: white;
+}
+
+.redColor {
+  background-color: red;
+  color: white;
+}
+
+.bg-warning {
+  color: #000;
+  background-color: #ffc107 !important;
+}
+
+a.bg-warning:hover,
+a.bg-warning:focus,
+button.bg-warning:hover,
+button.bg-warning:focus {
+  color: #000;
+  background-color: #d39e00 !important;
+}
+
+.finalSalaryBgClr {
+  background-color: greenyellow;
+}

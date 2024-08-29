@@ -1,0 +1,1404 @@
+// ======================================================
+// Custom layout variables
+// ======================================================
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+
+// ======================================================
+// Theme Global setting colors
+// ======================================================
+
+$themecolor: #1e88e5;
+$themecolor-dark: #028ee1;
+$themecolor-alt: #26c6da;
+$theme-light: #fff;
+$theme-dark: #212529;
+
+$skin1: #272c33;
+$skin2: #00acc1;
+$skin3: #fc4b6c;
+$skin4: #1e88e5;
+$skin5: #7460ee;
+$skin6: #fff;
+
+// ======================================================
+// Topbar settings
+// ======================================================
+
+$topbar: $theme-light;
+$topbar-height: 70px;
+$topbar-navlink-padding: 0px 15px;
+$topbar-navlink-font-size: 19px;
+$topbar-navlink-height: 70px;
+$topbar-navbrand-padding: 0 10px 0 10px;
+$topbar-shadow: 1px 0px 7px rgba(0, 0, 0, 0.05);
+$topbar-mailbox-width: 300px;
+$topbar-mailbox-height: 317px;
+$topbar-droptitle-bg: url(../../../../assets/images/background/img5.png)
+  no-repeat;
+
+// ======================================================
+// Authentication backgrounds
+// ======================================================
+
+$errorbg: url(../../../../assets/images/background/error-bg.jpg) no-repeat
+  center center #fff;
+
+// For Form Material
+$danger-img: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='../../../../assets/images/icon/danger.svg'");
+$warning-img: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='../../../../assets/images/icon/warning.svg'");
+$success-img: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='../../../../assets/images/icon/success.svg'");
+
+// ======================================================
+// Sidebar settings
+// ======================================================
+// sidebar type
+$sidebar-width-full: 250px;
+$sidebar-width-iconbar: 180px;
+$sidebar-width-mini: 65px;
+$left-part-width: 260px;
+
+// sidebar text color settings
+$sidebar: $theme-light;
+$sidebar-alt: #e8eff0;
+$sidebar-text: #fff;
+$sidebar-icons: #fff;
+$sidebar-text-dark: #607d8b;
+$sidebar-icons-dark: #99abb4;
+
+// ======================================================
+// boxed layout setting
+// ======================================================
+$boxed-width: 1200px;
+
+// ======================================================
+// Extra style setting
+// ======================================================
+$shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+$transitions: 0.2s ease-in;
+$transparent-dark-bg: rgba(0, 0, 0, 0.03);
+$lft: left;
+$rgt: right;
+$card-alt: #e4e9ef;
+
+// ======================================================
+// Mixin setting
+// ======================================================
+%square {
+  border-radius: 0px;
+}
+
+%rotate45 {
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+
+%topbar-shadow {
+  box-shadow: $topbar-shadow;
+  -webkit-box-shadow: $topbar-shadow;
+  -o-box-shadow: $topbar-shadow;
+  -moz-box-shadow: $topbar-shadow;
+}
+
+%card-shadow {
+  box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  -o-box-shadow: $shadow;
+}
+
+// ======================================================
+// Bootstrap override colors
+// ======================================================
+
+$white: #fff !default;
+$gray-100: #f6f9fc !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #8898aa !default;
+$gray-700: #525f7f !default;
+$gray-800: #263238 !default;
+$gray-900: #455a64 !default;
+$black: #000 !default;
+$cyan: #4fc3f7 !default;
+
+$blue: #1e88e5 !default;
+$indigo: #7460ee !default;
+$purple: #6f42c1 !default;
+$red: #fc4b6c !default;
+$orange: #fd7e14 !default;
+$yellow: #ffb22b !default;
+$green: #21c1d6 !default;
+
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+  (
+    "blue": $blue,
+    "indigo": $indigo,
+    "purple": $purple,
+    "red": $red,
+    "orange": $orange,
+    "yellow": $yellow,
+    "green": $green,
+    "cyan": $cyan,
+    "white": $white,
+  ),
+  $colors
+);
+
+$primary: $indigo !default;
+$success: $green !default;
+$info: $blue !default;
+$warning: $yellow !default;
+$danger: $red !default;
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+    "secondary": $gray-600,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "inverse": #263238,
+    "light-danger": #ffebee,
+    "light-info": #e1f5fe,
+    "light-warning": #fffde7,
+    "light-success": #f1f8e9,
+  ),
+  $theme-colors
+);
+
+// ======================================================
+// Dark Theme Colors Settings
+// ======================================================
+$theme-dark-bg-layout: #323743;
+$theme-dark-text-color: #b2b9bf !default;
+$theme-dark-border-color: rgba(255, 255, 255, 0.2) !default;
+$theme-dark-focus-border-color: rgba(255, 255, 255, 0.4) !default;
+$theme-dark-card-bg: #272b34;
+$theme-dark-bg-light: #3c424e;
+$main-body-bg-dark: $gray-900 !default;
+$background-alt: #2b2b2b !default;
+
+// ======================================================
+// Brand Colors
+// ======================================================
+$brand-colors: () !default;
+$brand-colors: map-merge(
+  (
+    "facebook": #3b5999,
+    "twitter": #1da1f2,
+    "googleplus": #dd4b39,
+    "instagram": #e4405f,
+    "pinterest": #bd081c,
+    "youtube": #cd201f,
+    "linkedin": #007bb6,
+    "slack": #3aaf85,
+    "dribbble": #ea4c89,
+    "github": #222222,
+  ),
+  $brand-colors
+);
+
+// ======================================================
+// Enable optional
+// ======================================================
+$enable-rounded: true !default;
+$enable-shadows: true !default;
+$enable-gradients: false !default;
+
+// ======================================================
+// Body
+// ======================================================
+$main-body-bg: #fff !default;
+$body-bg: #eef5f9;
+$body-color: #000000 !default;
+
+// ======================================================
+// Shadow setting
+// ======================================================
+$box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075) !default;
+$box-shadow: 0 0.5rem 1rem rgba($black, 0.08) !default;
+$box-shadow-lg: 0 1rem 3rem rgba($black, 0.175) !default;
+// Style anchor elements.
+
+$link-hover-decoration: none !default;
+
+// ======================================================
+// Typography
+// ======================================================
+$font-size-base: 0.875rem;
+$font-family-sans-serif: "Poppins", sans-serif !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-bold: 700 !default;
+$font-weight-base: $font-weight-light;
+
+// display setting
+$display5-size: 3rem !default;
+$display6-size: 2.5rem !default;
+$display7-size: 2rem !default;
+$display5-weight: 300 !default;
+$display6-weight: 300 !default;
+$display7-weight: 300 !default;
+
+// heading fonts setting
+$h1-font-size: 36px !default;
+$h2-font-size: 24px !default;
+$h3-font-size: 21px !default;
+$h4-font-size: 18px !default;
+$h5-font-size: 16px !default;
+$h6-font-size: 14px !default;
+$headings-margin-bottom: (1rem / 2) !default;
+$headings-font-weight: 400 !default;
+$headings-color: #455a64 !default;
+
+// --------------------------------------------------------------------- //
+//              Bootstrap Component override setting
+// --------------------------------------------------------------------- //
+
+// Breadcrumbs
+$breadcrumb-bg: $body-bg;
+$breadcrumb-margin-bottom: 1.5rem;
+
+// Cards
+$card-border-width: 0 !default;
+$card-border-radius: 4px !default;
+$card-bottom-margin: 30px !default;
+
+// Dropdowns
+$dropdown-item-padding-x: 1rem !default;
+$dropdown-item-padding-y: 0.65rem !default;
+$dropdown-border-color: $gray-200;
+$dropdown-divider-bg: $gray-100;
+$dropdown-box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1),
+  0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
+
+// Buttons
+$btn-secondary-border: $gray-300;
+$btn-hover-box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1),
+  0 3px 6px rgba(0, 0, 0, 0.08);
+$btn-focus-box-shadow: $btn-hover-box-shadow !default;
+$btn-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+// Tables
+$table-bg-accent: $gray-100;
+$table-bg-hover: $gray-100;
+$table-hover-bg: $gray-100 !default;
+$table-cell-padding: 1rem !default;
+$table-bg-level: -10 !default;
+$table-bg-level2: 1 !default;
+$table-bg-level3: -5 !default;
+
+// Components
+$component-active-color: $white !default;
+$component-active-bg: $themecolor !default;
+
+// Badges
+$badge-font-size: 73% !default;
+$badge-font-weight: $font-weight-light !default;
+$badge-padding-y: 0.35em !default;
+$badge-padding-x: 0.7em !default;
+$badge-pill-padding-x: 0.7em !default;
+$badge-pill-padding-y: 1em !default;
+
+// Forms
+$input-group-addon-bg: $gray-100;
+$input-border-color: $gray-200;
+$input-group-addon-border-color: $gray-200;
+$input-btn-focus-color: rgba(0, 0, 0, 0.25) !default;
+$input-focus-border-color: rgba(0, 0, 0, 0.25) !default;
+$input-btn-focus-box-shadow: none !default;
+$input-alternative-box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15),
+  0 1px 0 rgba(0, 0, 0, 0.02);
+$input-focus-alternative-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+  0 1px 3px rgba(0, 0, 0, 0.08);
+$input-box-shadow: none !default;
+$input-focus-box-shadow: none !default;
+$custom-select-box-shadow: none !default;
+
+// Border settings
+$border-width: 1px !default;
+$border-color: $gray-300 !default;
+$border-radius: 2px !default;
+$border-radius-lg: 4px !default;
+$border-radius-sm: 1px !default;
+
+// Progress bars
+$progress-height: 6px !default;
+$progress-bg: $gray-100;
+
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xlg: 1600px,
+) !default;
+
+// Define the maximum width of `.container` for different screen sizes.
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xlg: 1600px,
+) !default;
+
+// Navbar
+$navbar-dark-color: rgba($white, 0.8) !default;
+$navbar-dark-hover-color: rgba($white, 1) !default;
+
+// Modal
+$modal-content-box-shadow-xs: 0 0.25rem 0.5rem rgba($black, 0.2) !default;
+$modal-content-box-shadow-sm-up: 0 0.5rem 1rem rgba($black, 0.2) !default;
+
+// Tabs
+$nav-tabs-link-active-bg: $white !default;
+$nav-tabs-border-color: $gray-300 !default;
+$nav-tabs-border-width: $border-width !default;
+$nav-tabs-border-radius: $border-radius !default;
+$nav-tabs-link-hover-border-color: $gray-200 $gray-200 $nav-tabs-border-color !default;
+$nav-tabs-link-active-color: $gray-700 !default;
+$nav-tabs-link-active-bg: $body-bg !default;
+$nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg !default;
+
+/******************************* dummy menu scrollbar style start  *********************
+.newsidebar{
+  position: unset !important;
+  padding-top:0!important;
+  overflow-x: scroll;
+  white-space: nowrap;
+  overflow-y: hidden;
+  margin-top: -25px;
+  background: #052355;
+}
+.mynavigation{
+  position: unset !important;
+}
+
+.top-navbar1{max-width: fit-content!important;}
+
+.logo-icon img{
+  width: 100%;
+    padding-bottom: 31px;
+   
+    max-width: 135px;
+}
+
+.navbarbg{
+  background: #052355!important;
+}
+
+.sidebar-nav ul .sidebar-item .sidebar-link{font-size: 13px !important;}
+.sidebar-nav ul{display: inherit !important;}
+.newsidebar .mynavbar{
+  background: #052355!important;
+}
+
+.mynavbar .sidebar-item{
+  padding:0!important;
+  display: inline-block!important;
+}
+
+.mynavbar .sidebar-item a:active{
+ color:#fff !important;
+}
+
+.newsidebar::-webkit-scrollbar {
+ 
+  height:2px;
+}
+
+
+.newsidebar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(10, 10, 10); 
+  border-radius: 10px;
+}
+ 
+
+.newsidebar::-webkit-scrollbar-thumb {
+  background: rgb(153, 151, 151); 
+  border-radius: 10px;
+}
+
+
+.newsidebar::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+.topbar {
+  height: 45px!important;
+}
+.topbar .top-navbar .navbar-nav > .nav-item > .nav-link {
+  height: 19px !important;
+  margin-top: -47px;
+}
+
+.mainpage-wrapper{
+  padding: 0!important;
+    margin: 0!important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-top: 16px !important;
+}
+
+// .mynavigation{
+//     position: unset !important;
+//    }
+//    .top-navbar1{max-width: fit-content!important;}
+//    .logo-icon img{
+//       width: 100%;
+//         padding-bottom: 31px;
+       
+//         max-width: 135px;
+//     }
+
+//     .sidebar-nav ul .sidebar-item .sidebar-link{font-size: 13px !important;}
+// .mainpage-wrapper{
+//   padding: 0!important;
+//     margin: 0!important;
+//     width: 100% !important;
+//     max-width: 100% !important;
+//     padding-top: 16px !important;
+// }
+
+// .navbarbg{background: #052355!important;}
+
+// .newsidebar{
+//   z-index: 999;
+//   overflow: hidden;
+// }
+
+// .mynavbar {
+//   overflow-x: scroll;
+//   white-space: nowrap;
+//   width: 80%;
+//   height: auto;
+//   position: relative;
+//   clear: both;
+// }
+/******************************* dummy menu scrollbar style end *********************/
+
+/************************* new table grid design start ********************************/
+
+.searchinput1 {
+  width: 68%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  height: 34px;
+}
+
+.searchprdctbtn {
+  text-align: right;
+}
+
+.searchprdctbtn button {
+  border: 1px solid #1776a4;
+  background: transparent;
+  border-radius: 5px;
+  padding: 5px 9px;
+  color: #1776a4;
+  display: inline-block;
+  margin-right: 2px;
+}
+
+.checkvisibility {
+  padding: 1px 10px;
+}
+
+.checkvisibility label {
+  margin-left: 5px;
+  font-size: 12px !important;
+  margin-bottom: 0;
+}
+.dropdowncheck button {
+  background: #eee;
+  box-shadow: none;
+  border: 2px solid #eae9e9;
+}
+
+.dropdowncheck button:focus {
+  box-shadow: none !important;
+  background: transparent !important;
+  color: #1776a4 !important;
+}
+
+.dropdowncheck button:hover {
+  background: #eee !important;
+  border-color: #eae9e9 !important;
+}
+
+.dropdowncheck button:active {
+  background: transparent !important;
+}
+.dropdowncheck {
+  display: inline-block;
+}
+
+.dropdowncheck:not(:disabled):not(.disabled):active,
+.dropdowncheck:not(:disabled):not(.disabled).active,
+.show > .dropdowncheck.dropdown-toggle {
+  background: transparent !important;
+}
+
+.rgt-cell-header {
+  min-height: 30px !important;
+  max-height: 30px !important;
+  background: #f9f9f9 !important;
+}
+
+.rgt-cell-header-inner {
+  background: #f9f9f9 !important;
+  font-weight: 500;
+}
+
+/************************* nee table grid design end ********************************/
+
+/*************************** custom menu redesign start ********************/
+
+.newmenu {
+  // position: absolute;
+  // top: 15px;
+  // left: 50%;
+  // transform: translateX(-50%);
+  // display: inline-block;
+  // border: 2px solid #EBECF1;
+  // border-radius: 30px;
+  // animation: slide-in 1s ease-out;
+
+  ul {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 0 30px;
+    list-style-type: none;
+    li:not(:last-child) {
+      margin-right: 16px;
+    }
+    li {
+      border: 2px solid transparent;
+      border-radius: 5px;
+      // padding: 10px;
+      transition: background 0.2s;
+      line-height: 43px;
+      a {
+        color: #97bcf9;
+        text-decoration: none;
+        //text-transform: uppercase;
+        transition: color 0.2s;
+        display: block;
+      }
+      ul {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        display: block;
+        // margin: 12px -12px;
+        margin: 3px 0px;
+        padding: 0;
+        background: #fff;
+        // border: 2px solid #F7C833;
+        // border-right: 2px solid #F89329;
+        // border-bottom: 2px solid #F89329;
+        // border-radius: 5px;
+        transition: opacity 0.2s, visibility 0.2s;
+        li {
+          margin: -2px 0 0 -2px;
+          // width: calc(100% - 20px);
+          line-height: 16px;
+          padding: 5px 13px;
+          font-size: 13px;
+          font-weight: 400;
+          width: 100%;
+          min-width: 137px;
+          // border-bottom: 1px dashed #efefef;
+          // a {
+          //   color: #2375D8;
+          // }
+          &:hover {
+            color: #052355 !important;
+          }
+        }
+      }
+      &:hover {
+        // background: #EC4138;
+        // border: 2px solid #F05749;
+        // border-right: 2px solid #E02A21;
+        //border-bottom: 3px solid #fff;
+        a {
+          color: #f9f8fd;
+        }
+        ul {
+          visibility: visible;
+          opacity: 1;
+          box-shadow: 0px 3px 5px 2px #ebecf1;
+          li {
+            a {
+              color: #052355;
+            }
+            &:hover {
+              color: #333;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    top: -50px;
+  }
+  40% {
+    top: 20px;
+  }
+  70% {
+    top: 10px;
+  }
+  100% {
+    top: 15px;
+  }
+}
+
+.menu-link[aria-haspopup="false"] {
+  padding-right: 40px;
+  padding-top: 1px !important;
+}
+/************************ menu style desing start **********************/
+
+.menu__list {
+  display: flex;
+}
+
+.text-underlined {
+  position: relative;
+  overflow: hidden;
+
+  will-change: color;
+  transition: color 0.25s ease-out;
+}
+
+.text-underlined::before,
+.text-underlined::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: var(--textUnderlinedLineColor, currentColor);
+
+  will-change: width;
+  transition: width 0.1s ease-out;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.text-underlined::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.text-underlined::after {
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.text-underlined:hover::before,
+.text-underlined:hover::after {
+  width: 100%;
+  transition-duration: 0.2s;
+}
+
+/************************ menu style desing end **********************/
+
+.logo-icon img {
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 7px;
+  max-width: 135px;
+}
+
+.third-sub-layer a i {
+  float: right;
+}
+
+.third-sub-layer:hover ul {
+  // background: #EC4138;
+  // border: 2px solid #F05749;
+  // border-right: 2px solid #E02A21;
+  //border-bottom: 3px solid #fff;
+
+  visibility: visible !important;
+  opacity: 1;
+  box-shadow: 0px 3px 5px 2px #ebecf1;
+}
+
+.sub___menu {
+  position: absolute;
+  left: 185px;
+  margin-top: -20px !important;
+  width: 104%;
+  visibility: hidden !important;
+}
+
+.sub___menu li a:hover {
+  color: #0d56cc !important;
+}
+.newmenu ul li ul li a:hover {
+  color: #0d56cc !important;
+}
+
+.page-content {
+  height: 100vh;
+}
+/*************************** custom menu redesign end ********************/
+
+/*************************** new menu design stART *******************/
+
+$color-accent: #177e89;
+$color-light: #ffffff;
+$color-dark: #2a2a2a;
+$menu-link-padding: 20px 25px;
+$breakpoint: 950px;
+$mega-menu-multiLevel-colWidth: 100/3 + 0%;
+$mobile-menu-back-height: #{"calc(1.4em + 40px)"};
+$mobile-menu-back-offset: #{"calc(0px - (1.4em + 40px))"};
+$menu-mobile-width: 350px;
+
+nav {
+  ul,
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    &:hover,
+    &:visited {
+      text-decoration: none;
+    }
+  }
+}
+
+.menu-bar {
+  background: #052355;
+  display: flex;
+}
+.navbarbg {
+  background: #052355 !important;
+  height: 44px !important;
+}
+.menu-link {
+  //padding: $menu-link-padding;
+  // background: $color-light;
+  color: $color-accent;
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #fff;
+  font-weight: 600;
+  // transition:  .2s, color @include 2s;
+  // transition: background .2s, color @include 2s;
+  position: relative;
+  z-index: 1;
+  &[aria-haspopup="true"] {
+    padding-right: 40px;
+    padding-top: 1px !important;
+    &:after {
+      content: "";
+      background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1397521/arrowRight.svg#accent");
+      background-size: 14px;
+      width: 14px;
+      height: 14px;
+      font-size: 12px;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.mega-menu-header {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: darken($color-accent, 5%);
+}
+
+.mega-menu {
+  background: $color-light;
+  z-index: 10;
+  box-shadow: 1px 1px 4px #ccc;
+}
+
+.mega-menu--multiLevel {
+  flex-direction: column;
+
+  li {
+    a {
+      color: #333;
+      line-height: 25px;
+      font-weight: 400;
+    }
+  }
+}
+
+.menu-link:hover {
+  color: #feae05 !important;
+}
+
+// ------------------ MEDIA QUERIES
+
+@media all and (min-width: $breakpoint + 1px) {
+  // Desktop only
+
+  .nav {
+    margin-top: 50px;
+    background: $color-light;
+    > nav {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  }
+
+  .menu {
+    [aria-haspopup="true"] {
+      ~ ul {
+        display: none;
+      }
+    }
+  }
+
+  .menu-bar {
+    position: relative;
+    > li {
+      > [aria-haspopup="true"] {
+        // STYLING: Down arrow on desktop
+        &:after {
+          background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1397521/arrowBottom.svg#accent");
+          right: 23px;
+        }
+        &:hover {
+          &:after {
+            background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1397521/arrowBottom.svg#light");
+          }
+        }
+
+        // FUNCTIONALITY: Open mega menu
+        &:focus {
+          ~ ul {
+            display: flex;
+            transform-origin: top;
+            animation: dropdown 0.2s ease-out;
+          }
+        }
+        // FUNCTIONALITY: Keep mega menu open
+        ~ ul {
+          &:hover {
+            display: flex;
+          }
+        }
+      }
+
+      // FUNCTIONALITY: Keep mega menu open
+      &:focus {
+        > [aria-haspopup="true"] {
+          ~ ul {
+            display: flex;
+          }
+        }
+      }
+
+      // STYLING: Hover/Active state
+      > [aria-haspopup="true"]:focus,
+      &:focus > [aria-haspopup="true"],
+      &:hover > a {
+        // background: $color-accent;
+        color: #1776a4;
+
+        &:after {
+          // background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1397521/arrowTop.svg#light');
+          background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1397521/arrowBottom.svg#accent") !important;
+        }
+      }
+    }
+  }
+
+  .mega-menu {
+    // LAYOUT: Mega menu
+    position: absolute;
+    top: 100%;
+    // left: 0;
+    // width: 100%;
+    // width: 30%;
+    // width: 161px;
+    width: auto;
+    height: auto;
+    background: #fff;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    top: 36px;
+    // FUNCTIONALITY: Keep mega menu open
+    &:hover {
+      display: flex;
+    }
+    a {
+      &:hover {
+        background: tint($color-accent, 85%);
+        color: darken($color-accent, 5%);
+      }
+    }
+  }
+
+  .mega-menu--multiLevel {
+    // LAYOUT: Multi level columns
+    > li {
+      // width: $mega-menu-multiLevel-colWidth;
+      // padding-left: 10px;
+      // padding-right: 10px;
+      > [aria-haspopup="true"] {
+        ~ ul {
+          // left: $mega-menu-multiLevel-colWidth;
+          // width: $mega-menu-multiLevel-colWidth;
+          left: 180px;
+          // width: 165px;
+          // width: auto;
+          width: fit-content;
+          padding-right: 10px;
+          box-shadow: 1px 1px 4px #ccc;
+          background: #fff;
+          padding-left: 10px;
+          padding-top: 4px;
+          height: auto;
+          padding-bottom: 6px;
+          ul {
+            width: 100%;
+            left: 100%;
+          }
+        }
+      }
+    }
+
+    li {
+      // FUNCTIONALITY: Opening flyouts
+      &:hover {
+        > [aria-haspopup="true"] {
+          ~ ul {
+            display: block;
+            transform-origin: left;
+            animation: flyout 0.2s ease-out;
+          }
+        }
+      }
+
+      // FUNCTIONALITY: Keeping flyouts open
+      &:focus-within {
+        > [aria-haspopup="true"] {
+          ~ ul {
+            display: block;
+          }
+        }
+      }
+
+      // STYLING: Flyout link active states
+      &:hover,
+      &:focus-within {
+        > [aria-haspopup="true"],
+        > a {
+          background: tint($color-accent, 85%);
+          color: darken($color-accent, 5%);
+        }
+      }
+    }
+    [aria-haspopup="true"] {
+      ~ ul,
+      & {
+        // border-left: 1px solid #f0f0f0;
+        // FUNCTIONALITY: Keeping flyouts open
+        font-size: 13px;
+
+        &:hover {
+          display: block;
+        }
+      }
+      // LAYOUT: Flyouts
+      ~ ul {
+        position: absolute;
+        // top: 0;
+        margin-top: -25px;
+        height: 100%;
+      }
+    }
+  }
+
+  // STYLING: Flat mega menu columns
+  .mega-menu--flat {
+    > * {
+      flex: 1;
+    }
+  }
+
+  // Hide mobile specific elements
+  .mobile-menu-trigger,
+  .mobile-menu-header,
+  .mobile-menu-back-item {
+    display: none;
+  }
+}
+
+@media all and (max-width: $breakpoint) {
+  .nav {
+    padding: 20px;
+  }
+
+  .mobile-menu-trigger,
+  .mobile-menu-header,
+  .mobile-menu-back-item {
+    display: block;
+  }
+
+  .mobile-menu-trigger {
+    background: #052355;
+    color: $color-light;
+    border: 0;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 4px;
+    img {
+      max-width: 200px;
+      width: 100%;
+    }
+  }
+
+  .mobile-menu-header {
+    order: -1;
+    background: grey;
+    a {
+      padding: 5px 13px;
+      // padding: $menu-link-padding;
+      color: $color-light;
+      visibility: visible;
+    }
+  }
+
+  .menu-bar {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: $menu-mobile-width;
+    max-width: $menu-mobile-width;
+    max-width: 90%;
+    overflow-x: hidden;
+    z-index: 999;
+    transition: left 1s;
+    box-shadow: 1px 0px 2px 0px rgba(0, 0, 0, 0.25);
+    > li {
+      > [aria-haspopup="true"] {
+        ~ ul {
+          display: flex;
+          flex-direction: column;
+          background: $color-light;
+          position: absolute;
+          left: 100%;
+          top: 0;
+          max-height: 100vh;
+          width: 100%;
+          transition: right 1s;
+          // Second level
+          > li {
+            > [aria-haspopup="true"] {
+              font-size: 1.2em;
+              ~ ul {
+                a {
+                  padding-left: 40px;
+                }
+                // Third level
+                > li {
+                  > [aria-haspopup="true"] {
+                    ~ ul {
+                      a {
+                        padding-left: 80px;
+                        font-size: 13px;
+                        padding-left: 10px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          [aria-haspopup="true"] {
+            color: $color-dark;
+            &:after {
+              content: "+";
+              background: none;
+              font-size: 1em;
+              font-weight: normal;
+              height: 20px;
+              line-height: 1;
+            }
+            ~ ul {
+              max-height: 0px;
+              transform-origin: top;
+              transform: scaleY(0);
+              //   transition: max-height @include 1s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mega-menu-content {
+    padding: $menu-link-padding;
+  }
+
+  .mobile-menu-back-item {
+    order: -1;
+    a {
+      background: tint(grey, 70%);
+      color: $color-dark;
+      max-height: $mobile-menu-back-height;
+      margin-top: $mobile-menu-back-offset;
+      pointer-events: none;
+      &:before {
+        content: "";
+        width: 14px;
+        height: 12px;
+        background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1397521/arrowLeft.svg#default");
+        background-size: 14px;
+        margin-right: 10px;
+        display: inline-block;
+      }
+    }
+  }
+
+  // ------------------------ ALL DEVICES
+
+  .mobile-menu-trigger {
+    // FUNCTIONALITY: Open mobile menu
+    &:focus {
+      ~ ul {
+        left: 0;
+      }
+    }
+  }
+
+  .menu-bar {
+    // FUNCTIONALITY: Keep menu open
+    &:hover,
+    &:focus-within {
+      left: 0;
+    }
+    > li {
+      > [aria-haspopup="true"] {
+        // FUNCTIONALITY: Open mega menu
+        &:focus {
+          ~ ul {
+            left: 0;
+          }
+        }
+        ~ ul {
+          // STYLING: Back button offset
+          margin-top: $mobile-menu-back-height;
+
+          // FUNCTIONALITY: Keep mega menu open
+          &:hover,
+          &:focus-within {
+            left: 0;
+          }
+          // FUNCTIONALITY: Open dropdowns
+          [aria-haspopup="true"] {
+            &:focus {
+              ~ ul {
+                max-height: 500px;
+                animation: dropdown 0.3s forwards;
+              }
+            }
+          }
+          // FUNCTIONALITY: Keep dropdowns open
+          li {
+            &:focus-within {
+              > [aria-haspopup="true"] {
+                ~ ul {
+                  max-height: 500px;
+                  transform: scaleY(1);
+                }
+              }
+            }
+          }
+        }
+      }
+      // FUNCTIONALITY: Prevent clicks on link behind back button
+      &:focus-within ~ .mobile-menu-header a {
+        visibility: hidden;
+      }
+    }
+  }
+
+  // ------------------------ TOUCH DEVICES
+
+  @media (hover: none) {
+    // FUNCTIONALITY: Open mobile menu
+    .mobile-menu-trigger {
+      &:hover {
+        ~ ul {
+          left: 0;
+        }
+      }
+    }
+
+    // FUNCTIONALITY: Open mega menu
+    .menu-bar {
+      > li {
+        > [aria-haspopup="true"] {
+          &:hover {
+            ~ ul {
+              left: 0;
+            }
+          }
+          ~ ul {
+            &:hover {
+              left: 0;
+            }
+            // FUNCTIONALITY: Open dropdowns
+            [aria-haspopup="true"] {
+              &:hover {
+                ~ ul {
+                  max-height: 500px;
+                  animation: dropdown 0.3s forwards;
+                }
+              }
+              ~ ul {
+                &:hover {
+                  max-height: 500px;
+                  transform: scaleY(1);
+                }
+              }
+            }
+          }
+        }
+        &:hover ~ .mobile-menu-header {
+          a {
+            visibility: hidden;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ------------------ ANIMATIONS
+
+@keyframes dropdown {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes flyout {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+.signoutclass {
+  position: absolute;
+  right: 0;
+  margin-right: 0px;
+  padding: 1px 7px;
+  background: #1776a4;
+  color: #fff;
+  text-align: center;
+}
+
+.signoutclass:hover i {
+  color: #fff !important;
+}
+
+.logoimg {
+  margin-right: 10px;
+  margin-left: 7px;
+  img {
+    max-width: 116px;
+    width: 100%;
+  }
+}
+
+.top-navbar1 {
+  width: 100% !important;
+  max-width: inherit !important;
+}
+/*************************** new menu design end *******************/
+
+.pro-pic {
+  line-height: 44px !important;
+  height: 44px !important;
+}
+
+.top-navbar1 {
+  min-height: 44px !important;
+}
+
+.newsidebar {
+  width: 100%;
+}
+.menuarrow {
+  width: 17%;
+  text-align: right;
+}
+
+@media (max-width: 480px) {
+  .logoimg {
+    background: #04193c;
+    padding: 4px 6px;
+  }
+  .mynavigation {
+    display: none !important;
+  }
+
+  .mobile-menu-trigger img {
+    max-width: 131px;
+    width: 100%;
+  }
+  // .navbarbg {display: none;}
+  .menu-link {
+    padding-left: 10px;
+  }
+  .menuarrow {
+    display: none;
+  }
+
+  .mobile-menu-trigger i {
+    float: right;
+    margin-top: 7px;
+  }
+}

@@ -1,0 +1,12 @@
+#map-area {
+  height: 20%;
+  /* width: 100%; */
+}
+
+#map {
+  height: 100%;
+}
+body {
+  color: #000000 !important;
+  font-weight: 500;
+}
